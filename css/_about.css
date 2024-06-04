@@ -1,0 +1,220 @@
+/* About section */
+.about {
+    padding: 2.5rem 0 10rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .title {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+.about .title h2 {
+    line-height: 1.1;
+    font-size: 7.2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+}
+
+.about .title p {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--color-dark-hover);
+    font-weight: var(--font-weight-normal);
+}
+
+.about .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.about .content .line {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    height: 100%;
+    width: 0.25rem;
+    background-color: var(--color-primary);
+}
+
+.about .content .col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0;
+}
+
+.about .content .right,
+.about .content .left {
+    width: calc(50% - 4.2rem);
+    height: 100%;
+    border-radius: 14px;
+    padding: 4rem 3.2rem 4.6rem;
+    background: var(--color-background);
+    box-shadow: 0 4px 16px var(--color-text-dark);
+}
+
+.about .content .right-none,
+.about .content .left-none {
+    width: calc(50% - 4.2rem);
+}
+
+.about .content .mid {
+    padding: 0 2rem;
+}
+
+.about .content .round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+}
+
+.about .content .round svg {
+    width: 2rem;
+    height: 2rem;
+    color: var(--color-dark);
+    z-index: 0;
+}
+
+.about .content .date {
+    padding-bottom: 6px;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: var(--color-dark-hover);
+    font-weight: var(--font-weight-bold);
+}
+
+.about .content .text {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: var(--color-dark-hover);
+    font-weight: var(--font-weight-bold);
+}
+
+.about .content .text a {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: var(--color-secondary);
+    font-weight: var(--font-weight-bold);
+    transition: 0.3s ease;
+}
+
+.about .content .text a:hover {
+    text-shadow: 0 0 12px var(--color-primary);
+}
+
+
+
+
+
+/*  834px - 1068px - Laptop Sections */
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+    .about {
+        padding: 2.5rem 0 10rem 0;
+    }
+
+    .about .title {
+        padding-bottom: 20rem;
+    }
+
+    .about .title h2 {
+        font-size: 5rem;
+    }
+}
+
+
+
+/*  576px - 833px - Tablet Sections */
+@media screen and (min-width: 576px) and (max-width: 833px) {
+    .about {
+        padding: 5rem 0;
+    }
+
+    .about .title {
+        padding-bottom: 10rem;
+    }
+
+    .about .title h2 {
+        font-size: 5rem;
+    }
+}
+
+
+
+/*  575px and Lower - Mobile Sections */
+@media screen and (max-width: 575px) {
+    .about {
+        padding: 2.5rem 0;
+    }
+
+    .about .title {
+        padding-bottom: 5rem;
+    }
+
+    .about .title h2 {
+        font-size: 3rem;
+    }
+
+    .about .title p {
+        font-size: 2rem;
+    }
+
+
+    .about .content .mid {
+        padding: 0 1rem;
+    }
+
+    .about .content .round {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .about .content .round svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: var(--color-dark);
+        z-index: 0;
+    }
+
+    .about .content .right,
+    .about .content .left {
+        width: calc(50% - 2.5rem);
+        padding: 1.25rem;
+    }
+
+    .about .content .right-none,
+    .about .content .left-none {
+        width: calc(50% - 2.5rem);
+    }
+
+    .about .content .date {
+        padding-bottom: 6px;
+        font-size: 1rem;
+    }
+
+    .about .content .text {
+        font-size: 1.2rem;
+    }
+
+    .about .content .text a {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,125 @@
+/* Button */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem 2.4rem;
+    border: none;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--color-text-light);
+    font-weight: var(--font-weight-bold);
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+/* EthTracker button Starting*/
+.btn-ethtracker {
+    color: var(--color-dark);
+    padding: 0rem;
+}
+
+/* Header button Starting*/
+.btn-header {
+    background: var(--color-primary);
+    color: var(--color-dark);
+}
+
+.btn-header:hover {
+    background-color: var(--color-secondary);
+}
+
+/* Hero button Starting*/
+.btn-hero {
+    border: 2px solid var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-dark);
+}
+
+.btn-hero:hover {
+    border: 2px solid var(--color-secondary);
+    background-color: var(--color-secondary);
+}
+
+/* Dark button Starting*/
+.btn-dark {
+    border: 2px solid var(--color-dark);
+    color: var(--color-dark);
+    background: transparent;
+}
+
+.btn-dark:hover {
+    background-color: var(--color-dark);
+    color: var(--color-text-light);
+}
+
+/* Light button Starting*/
+.btn-light {
+    border: 2px solid var(--color-text-light);
+    color: var(--color-text-light);
+    background: transparent;
+    height: 5.6rem;
+}
+
+.btn-light:hover {
+    background-color: var(--color-text-light);
+    color: var(--color-dark);
+}
+
+/* Primary button Starting*/
+.btn-primary {
+    border: 2px solid var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-dark);
+    height: 5.6rem;
+}
+
+.btn-primary:hover {
+    border: 2px solid var(--color-secondary);
+    background-color: var(--color-secondary);
+}
+
+/* Black Bar button and icon Starting*/
+#btn-blackbar {
+    display: none;
+    cursor: pointer;
+}
+
+#btn-blackbar.active #blackbarbutton-icon {
+    transform: rotate(90deg);
+}
+
+#btn-blackbar:hover,
+#btn-blackbar:hover #blackbarbutton-icon {
+    color: var(--color-dark);
+}
+
+#blackbarbutton-icon {
+    color: var(--color-text-dark);
+    transition: 0.3s ease;
+    font-size: 2.4rem;
+}
+
+/* Icons Starting */
+.eth-icon {
+    font-size: 2rem;
+    color: var(--color-dark);
+    margin-right: 1rem;
+    transition: 0.3s ease;
+}
+
+.tw-icon {
+    font-size: 1.6rem;
+    color: var(--color-dark);
+    margin-right: 1rem;
+    transition: 0.3s ease;
+}
+
+.footer-icon {
+    background: var(--color-secondary);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.3rem;
+    margin: 0 0.3rem;
+}

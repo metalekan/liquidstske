@@ -1,0 +1,193 @@
+/* 1069px and Upper - Desktop Header */
+.header {
+    z-index: 99;
+    height: 15.6rem;
+    width: 100%;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation {
+    z-index: 100;
+    height: 5.6rem;
+    width: 129rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation .logo {
+    height: 5rem;
+    width: auto;
+    display: flex;
+}
+
+.navigation .navbar {
+    display: flex;
+    gap: 6rem;
+}
+
+.navigation .navbar a {
+    font-size: 1.6rem;
+    color: var(--color-dark);
+    font-weight: 500;
+    font-family: var(--font-family-1);
+    transition: 0.3s ease;
+}
+
+.navigation .navbar a:hover {
+    text-shadow: 0 0 12px var(--color-text-dark);
+}
+
+.nav-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-right .nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.nav-right .btn-ethtracker span {
+    margin-right: 0.4rem;
+}
+
+#black-bar {
+    z-index: 101;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-text-light);
+    display: none;
+}
+
+#nav-blackbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+}
+
+#nav-blackbar .logo {
+    height: 5rem;
+}
+
+#nav-blackbar a {
+    color: var(--color-dark);
+    font-weight: var(--font-weight-normal);
+    font-family: var(--font-family-1);
+    transition: 0.3s ease;
+    margin-bottom: 2.5rem;
+}
+
+#nav-blackbar a:hover {
+    text-shadow: 0 0 12px var(--color-text-dark);
+}
+
+
+/*  834px - 1068px - Laptop Header */
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+    .header {
+        height: 11.6rem;
+    }
+
+    .navigation .navbar {
+        gap: 3.3rem;
+    }
+}
+
+
+/*  576px - 833px - Tablet Header */
+@media screen and (min-width: 576px) and (max-width: 833px) {
+
+    #btn-blackbar {
+        z-index: 101;
+        display: block;
+    }
+
+    .header {
+        height: 6rem;
+        padding: 0;
+    }
+
+    .navigation .navbar {
+        display: none;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 6rem;
+        padding: 0 2.5rem 0 1.5rem;
+    }
+
+    .navigation .logo {
+        height: 4rem;
+    }
+    #nav-blackbar .logo {
+        height: 4rem;
+    }
+
+    .navigation .btn-header {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        border-radius: 12px;
+    }
+
+    .nav-right {
+        gap: 2rem;
+    }
+}
+
+/*  575px and Lower - Mobile Header */
+@media screen and (max-width: 575px) {
+
+    #btn-blackbar {
+        z-index: 101;
+        display: block;
+    }
+
+    #blackbarbutton-icon {
+        font-size: 2rem;
+    }
+
+    .header {
+        height: 6rem;
+        padding: 0;
+    }
+
+    .navigation .navbar {
+        display: none;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 6rem;
+        padding: 0 2.5rem 0 1.5rem;
+    }
+
+    .navigation .logo {
+        height: 3.5rem;
+    }
+    #nav-blackbar .logo {
+        height: 3.5rem;
+    }
+
+    .navigation .btn-header {
+        display: none;
+    }
+
+    .nav-right {
+        gap: 2rem;
+    }
+}

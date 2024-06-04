@@ -1,0 +1,382 @@
+/* What Can I Earn section */
+
+.earn {
+    padding: 2.5rem 0 10rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.earn .title {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20rem;
+    text-align: center;
+}
+
+.earn .title h2 {
+    line-height: 1.1;
+    font-size: 7.2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+}
+
+.earn .title p {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--color-dark-hover);
+    font-weight: var(--font-weight-normal);
+}
+
+.earn .card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    padding: 13.4rem 8rem 10rem 13.2rem;
+    gap: 5rem;
+    border-radius: 24px;
+    background: var(--color-background);
+    box-shadow: 0 8px 32px var(--color-text-dark);
+}
+
+
+.earn .card .left {
+    width: 40rem;
+    height: 100%;
+}
+
+.earn .card .right {
+    width: 40rem;
+    height: 100%;
+}
+
+
+.earn .card h3 {
+    line-height: 1.1;
+    font-size: 4.8rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+}
+
+.earn .card h4 {
+    line-height: 1.1;
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+}
+
+.earn .card p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--color-dark-hover);
+    font-weight: var(--font-weight-normal);
+}
+
+
+.earn .card .left .img {
+    margin-top: -27rem;
+    margin-left: -15.8rem;
+    max-width: 70rem;
+    z-index: 1;
+}
+
+.earn .card .left .img-2 {
+    display: none;
+    max-width: 70rem;
+    z-index: 1;
+}
+
+.earn .card .left .img img,
+.earn .card .left .img-2 img {
+    width: 100%;
+    height: auto;
+}
+
+.earn .card .left .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    gap: 2rem;
+}
+
+.earn .card .left .apr-content {
+    position: relative;
+    display: flex;
+    margin-bottom: 2.4rem;
+    padding-bottom: 3.6rem;
+    border-bottom: 2px solid rgba(116, 143, 181, .1);
+}
+
+.earn .card .left p span {
+    color: var(--color-primary);
+}
+
+.earn .card .left .apr {
+    position: relative;
+    top: -7px;
+    align-self: flex-end;
+    color: var(--color-dark-hover);
+}
+
+.earn .card .left .≈ {
+    position: relative;
+    top: 0;
+    padding-right: 3px;
+    line-height: 1.3333333333;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.earn .card .left .number {
+    position: relative;
+    top: 0;
+    line-height: 1.125;
+    font-weight: 600;
+    font-size: 6.4rem;
+}
+
+.earn .card .left .percent {
+    position: relative;
+    top: 4px;
+    line-height: 1.25;
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+
+.earn .card .left .bottom p {
+    font-size: 1.8rem;
+
+}
+
+.earn .card .left .earn-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+    gap: 0.8rem;
+}
+
+
+.earn .card .right .item {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.earn .card .right .padded {
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 3px solid rgba(116, 143, 181, .15);
+}
+
+.earn .card .right .item svg {
+    width: 4rem;
+    height: 4rem;
+}
+.earn .card .right .item .svg2 {
+    width: 3rem;
+    height: 3rem;
+}
+.earn .card .right .item .svg4 {
+    margin-top: -2rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+.earn .card .right .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+/*  834px - 1068px - Laptop Sections */
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+
+    .earn {
+        padding: 2.5rem 0 10rem 0;
+    }
+
+    .earn .title {
+        padding-bottom: 20rem;
+    }
+
+    .earn .title h2 {
+        font-size: 5rem;
+    }
+
+    .earn .card {
+        padding: 13rem 8rem;
+    }
+}
+
+/*  576px - 833px - Tablet Sections */
+@media screen and (min-width: 576px) and (max-width: 833px) {
+
+    .earn {
+        padding: 5rem 0;
+    }
+
+    .earn .title {
+        padding-bottom: 10rem;
+    }
+
+    .earn .title h2 {
+        font-size: 5rem;
+    }
+
+    .earn .card {
+        flex-direction: column;
+        padding: 4rem 3.2rem;
+        gap: 4rem;
+    }
+
+    .earn .card .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .earn .card .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .earn .card h3 {
+        font-size: 4rem;
+    }
+
+    .earn .card .left .img {
+        display: none;
+    }
+
+    .earn .card .left .img-2 {
+        display: block;
+    }
+
+    .earn .card .left .content {
+        margin-top: 0;
+    }
+
+    .earn .card .left .apr-content {
+        justify-content: center;
+        margin-bottom: 0;
+        padding-bottom: 2rem;
+    }
+
+    .earn .card .left .number {
+        font-size: 5rem;
+    }
+    .earn .card .right .item .svg2 {
+        width: 4rem;
+        height: 4rem;
+    }
+    .earn .card .right .item .svg4 {
+        margin-top: 0;
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+/*  575px and Lower - Mobile Sections */
+@media screen and (max-width: 575px) {
+ 
+    .earn {
+        padding: 2.5rem 0;
+    }
+
+    .earn .title {
+        padding-bottom: 5rem;
+    }
+
+    .earn .title h2 {
+        font-size: 3rem;
+    }
+    
+    .earn .title p {
+        font-size: 2rem;
+    }
+
+    .earn .card {
+        flex-direction: column;
+        padding: 3rem 2rem;
+        gap: 2.5rem;
+    }
+
+    .earn .card .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .earn .card .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .earn .card h3 {
+        font-size: 3.2rem;
+    }
+
+    .earn .card .left .earn-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+
+    .earn .card .left .earn-buttons .btn {
+        width: 100%;
+    }
+
+    .earn .card .left .img {
+        display: none;
+    }
+
+    .earn .card .left .img-2 {
+        display: block;
+    }
+
+    .earn .card .left .content {
+        margin-top: 0;
+    }
+
+    .earn .card .left .apr-content {
+        justify-content: center;
+        margin-bottom: 0;
+        padding-bottom: 2rem;
+    }
+
+    .earn .card .left .number {
+        font-size: 4.6rem;
+    }
+
+    .earn .card .right .padded {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .earn .card .right .item .svg2 {
+        width: 3rem;
+        height: 3rem;
+    }
+    .earn .card .right .item .svg4 {
+        margin-top: 0;
+        width: 8rem;
+        height: 8rem;
+    }
+}

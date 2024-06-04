@@ -1,0 +1,49 @@
+/* Containers */
+.container {
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+/* Utility Columns */
+.footer-row {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.flex-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  834px - 1068px - Laptop Sections */
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+
+}
+
+/*  576px - 833px - Tablet Sections */
+@media screen and (min-width: 576px) and (max-width: 833px) {
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+/*  575px and Lower - Mobile Sections */
+@media screen and (max-width: 575px) {
+    .container {
+        padding: 0 2rem;
+    }
+}

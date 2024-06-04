@@ -1,0 +1,159 @@
+/* General site settings Starting */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+html,
+body,
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+i,
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
+
+/* Root Starting */
+:root {
+    /* Colors */
+    --color-primary: #00e3ff;
+    --color-secondary: rgb(0, 203, 230);
+    --color-border: rgba(247, 247, 248, 0.149);
+    --color-background: rgb(238,239,242);
+    --color-eclipse: rgb(139, 181, 189);
+    --color-dark: #272E35;
+    --color-dark-hover: rgb(110, 117, 125);
+    --color-text-dark: rgb(105, 121, 134);
+    --color-text-hover: rgb(203, 203, 204);
+    --color-text-light: rgb(252, 252, 252);
+    --color-linear-1: linear-gradient(to left, var(--color-primary), var(--color-secondary));
+    --color-linear-1-2: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    --color-linear-2: linear-gradient(250deg, var(--color-dark) 90%, var(--color-primary) 100%);
+    --color-linear-3: linear-gradient(90.33deg,var(--color-border) .02%,var(--color-eclipse) 98.92%);
+    /* Font weights */
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+    --font-weight-black: 900;
+    /* Font families */
+    --font-family-1: 'Inter', sans-serif;
+    --font-family-2: 'Poppins', sans-serif;
+}
+
+
+/* Scrollbar Starting */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, var(--color-eclipse) 0%, var(--color-secondary) 50%, var(--color-eclipse) 100%);
+    -webkit-border-radius: 50px;
+    -webkit-box-shadow: 0 2px 5px var(--color-dark);
+}
+
+
+/* Font Setup Starting */
+html {
+    font-size: 10px;
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-normal);
+}
+
+body {
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-normal);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: rgb(193, 207, 221);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-2);
+    font-weight: var(--font-weight-bold);
+}
+
+p,
+a,
+ul,
+ol {
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-normal);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+
+/*  834px - 1068px - Laptop Fonts */
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+    body {
+        font-size: 1.4rem;
+    }
+}
+
+
+/*  576px - 833px - Tablet Fonts */
+@media screen and (min-width: 576px) and (max-width: 833px) {
+    body {
+        font-size: 1.1rem;
+    }
+}
+
+/*  575px and Lower - Mobile Fonts */
+@media screen and (max-width: 575px) {
+    body {
+        font-size: 0.8rem;
+    }
+}

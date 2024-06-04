@@ -1,0 +1,212 @@
+/* What is Liquid Staking section */
+
+.lqstaking {
+    padding: 2.5rem 0 10rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lqstaking .title {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20rem;
+    text-align: center;
+}
+
+.lqstaking .title h2 {
+    line-height: 1.1;
+    font-size: 7.2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+}
+
+.lqstaking .title p {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--color-dark-hover);
+    font-weight: var(--font-weight-normal);
+}
+
+.lqstaking .feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+.lqstaking .feature-2 {
+    flex-direction: row-reverse;
+}
+
+.lqstaking .content {
+    width: 25%;
+}
+
+.lqstaking .feature .image {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.lqstaking .feature-2 .image {
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.lqstaking .image img {
+    width: 100%;
+    max-width: 55rem;
+    height: auto;
+}
+
+.lqstaking .content h3 {
+    margin-bottom: 2.4rem;
+    line-height: 1.1;
+    font-size: 4.8rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+}
+
+.lqstaking .content p {
+    margin-bottom: 3.2rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--color-dark-hover);
+    font-weight: var(--font-weight-normal);
+}
+
+
+/*  834px - 1068px - Laptop Sections */
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+
+    .lqstaking {
+        padding: 2.5rem 0 10rem 0;
+    }
+
+    .lqstaking .title {
+        padding-bottom: 20rem;
+    }
+
+    .lqstaking .title h2 {
+        font-size: 5rem;
+    }
+
+    .lqstaking .feature {
+        justify-content: space-between;
+    }
+
+    .lqstaking .content {
+        width: 35%;
+    }
+    
+    .lqstaking .feature .image,
+    .lqstaking .feature-2 .image {
+        width: 65%;
+    }
+}
+
+/*  576px - 833px - Tablet Sections */
+@media screen and (min-width: 576px) and (max-width: 833px) {
+
+    .lqstaking {
+        padding: 5rem 0;
+    }
+
+    .lqstaking .title {
+        padding-bottom: 10rem;
+    }
+
+    .lqstaking .title h2 {
+        font-size: 5rem;
+    }
+
+    .lqstaking .feature {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 6rem;
+    }
+
+    .lqstaking .feature-2 {
+        flex-direction: column;
+    }
+
+    .lqstaking .content {
+        width: 100%;
+    }
+
+    .lqstaking .feature .image,
+    .lqstaking .feature-2 .image {
+        width: 100%;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .lqstaking .content h3 {
+        margin-bottom: 2.4rem;
+        font-size: 3.2rem;
+    }
+
+}
+
+/*  575px and Lower - Mobile Sections */
+@media screen and (max-width: 575px) {
+ 
+    .lqstaking {
+        padding: 2.5rem 0;
+    }
+
+    .lqstaking .title {
+        padding-bottom: 5rem;
+    }
+
+    .lqstaking .title h2 {
+        font-size: 3rem;
+    }
+    
+    .lqstaking .title p {
+        font-size: 2rem;
+    }
+
+    
+    .lqstaking .feature {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+
+    .lqstaking .feature-2 {
+        flex-direction: column;
+    }
+
+    .lqstaking .content {
+        width: 100%;
+    }
+
+    .lqstaking .feature .image,
+    .lqstaking .feature-2 .image {
+        width: 100%;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .lqstaking .content h3 {
+        margin-bottom: 2rem;
+        font-size: 3.2rem;
+    }
+
+    .lqstaking .content p {
+        margin-bottom: 2rem;
+    }
+}
